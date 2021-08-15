@@ -15,8 +15,8 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      player_turn: "X",
-      board: ["", "", "", "", "", "", "", "", "",]
+      player_turn: "X"
+      
     }
     
     this.squareClicked = this.squareClicked.bind(this)

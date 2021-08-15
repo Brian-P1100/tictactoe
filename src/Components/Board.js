@@ -2,47 +2,30 @@ import React from 'react'
 import Square from './Square'
 import { Container, Row, Col } from 'reactstrap';
 
+import React, { Component } from 'react'
 
-function Board() {
-    return (
-        <div>
-            <Container>
-                <Row>
-                    <Col>
-                        <Square />
-                    </Col>
-                    <Col>
-                        <Square />
-                    </Col>
-                    <Col>
-                        <Square />
-                    </Col>
-                </Row>
-                <Row>
-                     <Col>
-                        <Square />
-                    </Col>
-                    <Col>
-                        <Square />
-                    </Col>
-                    <Col>
-                        <Square />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <Square />
-                    </Col>
-                    <Col>
-                        <Square />
-                    </Col>
-                    <Col>
-                        <Square />
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-    )
+class Board extends Component {
+constructor(props) {
+    super(props)
+
+    this.state = {
+        board: ["", "", "", "", "", "", "", "", "",]
+    }
+}
+
+
+    render() {
+        return (
+          <div className="board">
+              {this.state.board.map({Square}) => {
+                return (<div onClick={() => this.state.Player(index)} className="square">{Square}</div>)
+              })}
+            </div>        
+          
+        );
+      }
+    
+
 }
 
 export default Board
