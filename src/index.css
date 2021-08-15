@@ -1,0 +1,25 @@
+body {
+  background-color: #2a3d6d;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.board {
+  width: 490px;
+  height: 490px;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 160px;
+  height: 160px;
+  border: 1px solid black;
+}
+
+.square:hover {
+  background: #3d4865;
+  cursor: pointer;
+}
