@@ -1,25 +1,13 @@
 body {
-  background-color: #2a3d6d;
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-.board {
-  width: 490px;
-  height: 490px;
-  border: 1px solid black;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.square {
-  width: 160px;
-  height: 160px;
-  border: 1px solid black;
-}
-
-.square:hover {
-  background: #3d4865;
-  cursor: pointer;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
